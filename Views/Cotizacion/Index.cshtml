@@ -1,0 +1,52 @@
+@model Tienda.Models.Persona
+
+<div class="container mt-3">
+    <h1>Cuéntanos qué quieres saber</h1>
+    <p>Somos especialistas en el acompañamiento activo de tu compra, cuéntanos qué quieres cotizar o si requieres información de nuestros productos. Te respondemos en un plazo de 24 horas.</p>
+
+    <form asp-controller="Cotizacion" asp-action="Index" method="post">
+
+
+        <!-- Nombre -->
+        <div class="mb-3">
+            <label asp-for="Nombre" class="form-label">Nombre Completo</label>
+            <input asp-for="Nombre" class="form-control" placeholder="Escribe tu nombre" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+        
+
+        <!-- Teléfono -->
+        <div class="mb-3">
+            <label asp-for="Telefono" class="form-label">Teléfono</label>
+            <input asp-for="Telefono" class="form-control" placeholder="Escribe tu teléfono" />
+            <span asp-validation-for="Telefono" class="text-danger"></span>
+        </div>
+
+        <!-- Correo Electrónico -->
+        <div class="mb-3">
+            <label asp-for="Correo" class="form-label">Correo electrónico</label>
+            <input asp-for="Correo" class="form-control" placeholder="nombre@ejemplo.com" />
+            <span asp-validation-for="Correo" class="text-danger"></span>
+        </div>
+
+        <!-- Tipo de Cotización -->
+        <div class="mb-3">
+            <label asp-for="Tipo" class="form-label">Tipo de Cotización</label>
+            <select asp-for="Tipo" class="form-control">
+                <option value="">Escoge una opción</option>
+                <option value="Computador">Computador</option>
+                <option value="Portatiles">Portátiles</option>
+            </select>
+            <span asp-validation-for="Tipo" class="text-danger"></span>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-check mb-3">
+            <input asp-for="PrimeraVez" type="checkbox" id="checkSizeLg" class="form-check-input bg-secondary" checked />
+            <label asp-for="PrimeraVez" class="form-check-label">Primera vez cotizando</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+        
+    </form>
+</div>

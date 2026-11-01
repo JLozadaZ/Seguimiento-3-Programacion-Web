@@ -1,0 +1,14 @@
+@model Tienda.Models.Persona
+
+<div class="container mt-5">
+    <h2>Resultado de la Cotización</h2>
+    <div class="card mt-4">
+        <div class="card-body">
+            <p><strong>Nombre:</strong> @Model.Nombre</p>
+            <p><strong>Correo Electrónico:</strong> @Model.Correo</p>
+            <p><strong>Teléfono:</strong> @Model.Telefono</p>
+            <p><strong>Tipo de Cotización:</strong> @Model.Tipo</p>
+            <p><strong>Primera vez cotizando:</strong> @(Model.PrimeraVez ? "Sí" : "No")</p>
+        </div>
+    </div>
+    <a asp-action="Index" class="btn btn-primary mt-3">Volver a Cotización</a>
