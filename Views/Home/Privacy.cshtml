@@ -1,7 +1,54 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Nosotros";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
-<p>Fecha del servidor: @DateTime.Now.ToString(format: "yyyy-MM-dd")</p>
+<div class="container mt-2">
+    <!-- Encabezado principal -->
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-primary">Sobre Distritec S.A.S</h1>
+        <p class="lead text-muted">Acompañándote en cada paso de tu compra tecnológica.</p>
+    </div>
+
+    <!-- Sección de Quiénes Somos -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-7">
+            <h2 class="h3 fw-bold mb-3">¿Quiénes Somos?</h2>
+            <p class="text-secondary fs-5" style="line-height: 1.7;">
+                En <strong>Distritec S.A.S</strong> somos especialistas en la comercialización y distribución de equipos de cómputo, impresoras, consumibles y accesorios tecnológicos. 
+            </p>
+            <p class="text-secondary fs-5" style="line-height: 1.7;">
+                Nos enfocamos en brindar un acompañamiento activo antes, durante y después de tu compra, asegurando que encuentres la solución exacta para tus necesidades personales o empresariales.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <div class="card bg-light border-0 p-4 shadow-sm text-center">
+                <h3 class="h4 fw-bold text-dark mb-3">Nuestra Propuesta de Valor</h3>
+                <p class="text-muted mb-0">Respuesta rápida en menos de 24 horas, atención personalizada y equipos garantizados.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjetas de Misión y Visión -->
+    <div class="row g-4 text-center">
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm bg-light">
+                <div class="card-body p-4">
+                    <h3 class="card-title h4 text-dark fw-bold mb-3">Misión</h3>
+                    <p class="card-text text-secondary fs-6">
+                        Proveer soluciones tecnológicas integrales con agilidad, calidad y asesoría cercana, ayudando a nuestros clientes a potenciar su productividad.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm bg-light">
+                <div class="card-body p-4">
+                    <h3 class="card-title h4 text-dark fw-bold mb-3">Visión</h3>
+                    <p class="card-text text-secondary fs-6">
+                        Ser el aliado tecnológico preferido por empresas y personas en la región, reconocidos por la transparencia, eficiencia y excelencia en el servicio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
