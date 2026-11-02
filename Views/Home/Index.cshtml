@@ -1,8 +1,42 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Distritec S.A.S</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="p-5 mb-4 bg-light rounded-3 text-center border">
+    <div class="container-fluid py-3">
+        <h1 class="display-5 fw-bold text-primary">Bienvenido a Distritec S.A.S</h1>
+        <p class="col-md-10 fs-4 mx-auto text-muted">
+            Soluciones en tecnología, soporte y equipos de cómputo a tu medida. Nos encargamos de acompañar cada paso de tu compra.
+        </p>
+        <a class="btn btn-primary btn-lg mt-2" asp-controller="Cotizacion" asp-action="Index">
+            Solicitar Cotización
+        </a>
+    </div>
+</div>
+
+<div class="row text-center mt-4 g-4">
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 bg-light">
+            <div class="card-body">
+                <h3 class="card-title h5 text-dark">Venta de Equipos</h3>
+                <p class="card-text text-secondary">Computadores de escritorio y portátiles ajustados a tus necesidades de estudio o trabajo.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 bg-light">
+            <div class="card-body">
+                <h3 class="card-title h5 text-dark">Mantenimiento</h3>
+                <p class="card-text text-secondary">Servicio técnico especializado para optimizar y reparar tus dispositivos.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 bg-light">
+            <div class="card-body">
+                <h3 class="card-title h5 text-dark">Asesoría Directa</h3>
+                <p class="card-text text-secondary">Te respondemos en menos de 24 horas para resolver cualquier inquietud.</p>
+            </div>
+        </div>
+    </div>
 </div>
