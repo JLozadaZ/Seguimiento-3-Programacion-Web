@@ -2,6 +2,7 @@
 
 <div class="container mt-5">
     <h2>Resultado de la Cotización</h2>
+    <p>Tu cotización ha sido procesada con éxito. Espera un correo o mensaje de celular con todos los detalles que necesitas.</p>
     <div class="card mt-4">
         <div class="card-body">
             <p><strong>Nombre:</strong> @Model.Nombre</p>
@@ -9,6 +10,7 @@
             <p><strong>Teléfono:</strong> @Model.Telefono</p>
             <p><strong>Tipo de Cotización:</strong> @Model.Tipo</p>
             <p><strong>Primera vez cotizando:</strong> @(Model.PrimeraVez ? "Sí" : "No")</p>
+            <p><strong>Mensaje:</strong> @Model.Mensaje</p>
         </div>
     </div>
     <a asp-action="Index" class="btn btn-primary mt-3">Volver a Cotización</a>

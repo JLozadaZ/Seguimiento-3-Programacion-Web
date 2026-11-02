@@ -12,4 +12,5 @@ public class Persona
     [Required]
     public string Tipo { get; set; } = string.Empty;
     public bool PrimeraVez { get; set; } = false;
+    public string Mensaje { get; set; } = string.Empty;
 }
